@@ -1,0 +1,277 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Classificados Reserva Raposo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Classificados Reserva Raposo</title>
+	<link rel="stylesheet"  type="text/css" href="exercicio_css.css">
+
+	
+	<link rel="stylesheet" href="exercicio_css.css">
+	<style>
+
+
+		
+		
+		html,body { /* Estilo do corpo da página */
+		
+            padding: 0;
+             /* Centraliza vertical */
+            height: 100vh; /* Altura total da tela */
+            margin: 5px; /* Remove margem padrão */
+        }
+
+		
+		
+		label{
+			
+        	font-weight: bold;
+        	margin-top: 10px;
+        	display: block;
+	 		padding: 8px;
+		}
+		
+       
+		    .campo { /* Div de cada campo */
+            margin-bottom: 15px; /* Espaço inferior */
+        }
+
+        input, textarea, select { /* Campos de entrada */
+            width: 100%; /* Ocupa toda largura */
+            padding: 8px; /* Espaçamento interno */
+            margin-top: 5px; /* Espaço acima */
+            box-sizing: border-box; /* Ajusta tamanho */
+        }
+
+      
+   
+		.botao {
+			align-content: center;
+   		 color: black;          /* texto preto */
+    	 background: rgb(194, 198, 233);     /* opcional: fundo branco */
+    	 padding: 5px 8px;
+         border-radius: 6px;
+    	 text-decoration: none; /* tira o sublinhado */
+   		 cursor: pointer;
+		 font-weight: bold;
+		 font-family: Arial; color: black;
+		 font-size: 18px;
+		 box-shadow: 0 0 8px black;
+		 border-radius: 8px
+}
+
+       
+			
+
+	.planos-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 8px;
+		
+}
+
+
+    
+   
+.planos-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.column {
+    width: 31%;
+    background:#rgba(31,38,116,1.00);
+    padding: 10px;
+    
+    border-radius: 8px;
+}
+
+h3 {
+    font-weight: 100;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.anuncio {
+    text-align: justify;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+h3  {font-weight: 10px;
+    text-align: center;
+	color: black;
+    padding: 10px;
+	
+}
+.anuncio {
+	text-align: justify;
+	color: white;
+    padding: 10px;
+	font-family: Arial;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	z-index:0;
+	line-height: 1.6; 
+	border-radius: 8px;
+	box-shadow: 0 0 5px #ccc;
+	align-items: stretch;
+	flex: 1; 
+			
+		}
+		
+
+	</style>
+	
+</head>
+
+<body>
+	<header>	
+		<nav>
+		<ul>
+  		<li class="home"><a  href="index.html" class="dropbtn">Home</a></li>
+		<li class="comercio"><a href="javascript:void(0)" class="dropbtn">Comércio</a>
+		<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0051.1.html">Alimentação</a>
+      				<a class="link" href="uc_2_antonia_exercicios_0051.2.html">Vestuário</a>
+      									
+    			</div></li>
+		
+		<li class="servicos"><a href="javascript:void(0)" class="dropbtn">Serviços</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0051.3.html">Saude</a>
+      				
+      									
+    			</div></li>
+		
+		<li class="lazer"><a href="javascript:void(0)" class="dropbtn">Lazer</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0051.4.html">Esportes/parques</a>
+      								
+    			</div></li>
+		<li class="telefone"><a href="javascript:void(0)" class="dropbtn">Telefone Úteis</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0052.1.html">Contatos</a>
+      				
+      									
+    			</div></li>
+		
+		<li class="fale_conosco"><a href="javascript:void(0)" class="dropbtn">Fale Conosco</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0053.html">Sac</a>
+      									
+    			</div></li>
+  		<li class="anuncie"><a href="javascript:void(0)" class="dropbtn">Anuncie</a>
+			<div class="dropdown-content">
+					<a class="link" href="uc_2_antonia_exercicios_0053.2.html">planos</a>
+      				<a class="link" href="uc_2_antonia_exercicios_0053.1.html">Assinar</a>
+					<a class="link" href="uc_2_antonia_exercicios_0053.html">Cancelamento</a>
+      								
+    			</div></li>
+		
+  		<li class="dropdown">
+    		<a href="javascript:void(0)" class="dropbtn">Mapa do site</a>
+    			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0052.2.html">Mapa do site</a>
+      					
+					
+    			</div>
+			
+  		</li>
+</ul>
+	
+		
+		
+		<div> 
+			<form class="top-search" role="search" aria-label="Buscar">
+      		<input type="search" placeholder="Pesquisar..." aria-label="Pesquisar"/>
+      		<button type="submit" aria-label="Buscar">🔎</button></form>
+		</div> </nav>
+		<p></p>
+		
+		
+	</header>
+	
+	<main>
+    <h2>Planos de assinatura de divulgação</h2>
+		<p></p>
+
+    <div class="planos-container">
+
+        <!-- COLUNA 1 -->
+        <div class="column">
+            <h3>Plano essencial</h3>
+            <ul class="anuncio">
+                <li><strong>Inclui:</strong> Acesso a até 1 contato por mês. Atualizações mensais do banco de dados. Suporte via e-mail.</li>
+                <li><strong>Benefícios:</strong> Baixo custo, ideal para pequenos comerciantes ou iniciantes, uso simples para testes.</li>
+                <li><strong>Público recomendado:</strong> MEIs, pequenos negócios, autônomos.</li><p></p><p></p>
+
+            </ul><a href="uc_2_antonia_exercicios_0053.1.html" class="botao">Assinar</a><p></p>
+			<p></p>
+			
+            
+        </div>
+
+        <!-- COLUNA 2 -->
+        <div class="column">
+            <h3>Plano intermediário</h3>
+            <ul class="anuncio">
+                <li><strong>Inclui:</strong> Acesso a até 5 contatos por mês. Atualizações quinzenais. Suporte via WhatsApp.</li>
+                <li><strong>Benefícios:</strong> Melhor visibilidade e mais oportunidades.</li>
+                <li><strong>Público recomendado:</strong> Negócios em crescimento.</li><p></p>
+				<p></p><p></p>
+
+            </ul><a href="uc_2_antonia_exercicios_0053.1.html" class="botao">Assinar</a><p></p>
+
+            <p></p>
+			<p></p>
+		
+            
+        </div>
+
+        <!-- COLUNA 3 -->
+        <div class="column">
+            <h3>Plano premium</h3>
+            <ul class="anuncio">
+                <li><strong>Inclui:</strong> Contatos ilimitados. Atualizações semanais. Suporte prioritário.</li>
+                <li><strong>Benefícios:</strong> Máxima visibilidade e alcance.</li>
+                <li><strong>Público recomendado:</strong> Empresas estabelecidas.</li><p></p>
+				<p></p><p></p>
+
+            </ul><a href="uc_2_antonia_exercicios_0053.1.html" class="botao">Assinar</a><p></p>
+
+        </div>
+
+    </div>
+
+   
+</main>
+   
+		<p></p>
+		 <p class="btn-container">
+			 
+  <a href="uc_2_antonia_exercicios_0053.3.html" class="btn">Cancelar Plano</a>
+  <a onclick="window.history.back()" class="btn" style="cursor:pointer;">Voltar</a>
+	</p>
+	<p></p>
+
+
+<footer>
+    <p>© 2026 - Antonia</p>
+</footer>
+
+
+</body>
+</html>

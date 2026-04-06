@@ -1,0 +1,295 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>Classificados Reserva Raposo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Reserva Raposo</title>
+	<link rel="stylesheet"  type="text/css" href="exercicio_css.css">
+
+	
+	<link rel="stylesheet" href="exercicio_css.css">
+	<style>
+		
+		html,body { /* Estilo do corpo da página */
+		
+            font-family: Arial, sans-serif; /* Fonte do texto */
+            background-color: #f2f2f2; /* Cor de fundo */
+            display: contents;  /*Usa flexbox */
+            justify-content: center; /* Centraliza horizontal */
+            align-items:center; /* Centraliza vertical */
+            height: 100vh; /* Altura total da tela */
+            margin: 10px; /* Remove margem padrão */
+        }
+		.container { /* Caixa do formulário */
+			justify-content: center;
+			margin-left: 350px;
+			
+			align-content: center;
+            background-color: white; /* Fundo branco */
+            padding: 40px; /* Espaçamento interno */
+            width: 1000px; /* Largura fixa */
+            border-radius: 8px; /* Cantos arredondados */
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* Sombra */
+        }
+		
+		label{
+			
+        	font-weight: bold;
+        	margin-top: 10px;
+        	display: block;
+	 		padding: 8px;
+		}
+		
+       
+		    .campo { /* Div de cada campo */
+            margin-bottom: 15px; /* Espaço inferior */
+        }
+
+        input, textarea, select { /* Campos de entrada */
+            width: 100%; /* Ocupa toda largura */
+            padding: 8px; /* Espaçamento interno */
+            margin-top: 5px; /* Espaço acima */
+            box-sizing: border-box; /* Ajusta tamanho */
+        }
+
+        botao { /* Botão */
+            width: 100%; /* Largura total */
+            padding: 10px; /* Espaçamento interno */
+            background-color: #007BFF; /* Cor azul */
+            color: white; /* Texto branco */
+            border: none; /* Remove borda */
+            cursor: pointer; /* Cursor de clique */
+        }
+
+        button:hover { /* Efeito ao passar mouse */
+            background-color: blue;
+			
+			/* Azul mais escuro */
+        }
+		* Estilo do modal */
+        header {
+        background: #333;
+        color: white;
+        padding: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    /* Fundo escuro */
+    .modal {
+        display: none; /* começa escondido */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+    /* Caixa branca centralizada */
+    .modal-conteudo {
+        background: white;
+        width: 300px;
+        margin: 15% auto;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+
+
+
+	</style>
+	
+</head>
+
+<body>
+	
+	<header>	<nav>
+		<ul>
+  		<li class="home"><a  href="index.html" class="dropbtn">Home</a></li>
+		<li class="comercio"><a href="javascript:void(0)" class="dropbtn">Comércio</a>
+		<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0051.1.html">Alimentação</a>
+      				<a class="link" href="uc_2_antonia_exercicios_0051.2.html">Vestuário</a>
+      									
+    			</div></li>
+		
+		<li class="servicos"><a href="javascript:void(0)" class="dropbtn">Serviços</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0051.3.html">Saude</a>
+      				
+      									
+    			</div></li>
+		
+		<li class="lazer"><a href="javascript:void(0)" class="dropbtn">Lazer</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0051.4.html">Esportes/parques</a>
+      								
+    			</div></li>
+		<li class="telefone"><a href="javascript:void(0)" class="dropbtn">Telefone Úteis</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0052.1.html">Contatos</a>
+      				
+      									
+    			</div></li>
+		
+		<li class="fale_conosco"><a href="javascript:void(0)" class="dropbtn">Fale Conosco</a>
+			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0053.html">Sac</a>
+      									
+    			</div></li>
+  		<li class="anuncie"><a href="javascript:void(0)" class="dropbtn">Anuncie</a>
+			<div class="dropdown-content">
+					<a class="link" href="uc_2_antonia_exercicios_0053.2.html">planos</a>
+      				<a class="link" href="uc_2_antonia_exercicios_0053.1.html">Assinar</a>
+					<a class="link" href="uc_2_antonia_exercicios_0053.html">Cancelamento</a>
+      								
+    			</div></li>
+		
+  		<li class="dropdown">
+    		<a href="javascript:void(0)" class="dropbtn">Mapa do site</a>
+    			<div class="dropdown-content">
+      				<a class="link" href="uc_2_antonia_exercicios_0052.2.html">Mapa do site</a>
+      					
+					
+    			</div>
+			
+  		</li>
+</ul>
+	
+		
+		<div> 
+			<form class="top-search" role="search" aria-label="Buscar">
+      		<input type="search" placeholder="Pesquisar..." aria-label="Pesquisar"/>
+      		<button type="submit" aria-label="Buscar">🔎</button>
+		</div> 
+		<p></p>
+		
+		
+	</header>
+	<p></p>
+		<p></p>
+		<p></p>
+	<main>
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+        <form id="cadastroForm" action="#" method="post">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+             
+                
+            
+            <div class="campo">
+                <label>Gênero:</label><br>
+                <input type="radio" name="genero" value="masculino"> Masculino
+                <input type="radio" name="genero" value="feminino"> Feminino
+            </div>
+            <div class="campo">
+                <label for="mensagem">Observações:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+				<div class="campo">
+                <label for="senha">Numero do cartão:</label>
+                <input type="password" id="senha" name="senha">
+				 <label for="senha">Nome no cartão :</label>
+                <input type="password" id="senha" name="senha">
+				 <label for="senha">Cód segurança :<label for="senha">validade:</label>
+                <input type="password" id="senha" name="senha">
+            </div></label>
+				<button onclick="abrirModal()">Enviar Cadastro</button>
+            </div>
+            
+        </form>
+		<p class="btn-container">
+
+  <a onclick="window.history.back()" class="btn" style="cursor:pointer;">Voltar</a>
+	</p>
+	
+    </div>
+
+   
+		
+		<div class="modal" id="minhaModal">
+    
+    <div class="modal-conteudo">
+        
+        <p>Confirma o envio do cadastro.</p>
+        <button onclick="fecharModal()">Fechar</button>
+		 <a onclick="window.history.back()" class="btn" style="cursor:pointer;">Voltar</a>
+	</p>
+    </div>
+</div>
+</main>
+		<script>
+  // Função para abrir a modal
+  function abrirModal() {
+    document.getElementById("minhaModal").style.display = "block";
+  }
+
+  // Função para fechar a modal
+  function fecharModal() {
+    document.getElementById("minhaModal").style.display = "none";
+  }
+
+  // Função para confirmar e enviar o formulário
+  function confirmarEnvio() {
+    document.getElementById("btnEnviar").submit();
+  }
+
+  // Fecha a modal se clicar fora dela
+  window.onclick = function(event) {
+    let modal = document.getElementById("minhaModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+<!-- Modal de Confirmação -->
+
+<!-- Estrutura da Modal -->
+
+<script>
+    function abrirModal() {
+        document.getElementById("minhaModal").style.display = "block";
+    }
+    function fecharModal() {
+        document.getElementById("minhaModal").style.display = "none";
+    }
+</script>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p>© 2026 - Antonia</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  $("#btnEnviar").click(function(){
+    $("#confirmModal").modal('show');
+  });
+  $("#confirmSubmit").click(function(){
+    $("#cadastroForm").submit();
+  });
+});
+</script>
+</body>
+</html>
